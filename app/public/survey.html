@@ -1,0 +1,247 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 survey_title">
+                    Friend Finder Survey
+            </div>
+        <div class="row">
+            <div class="col-md-10 about_you_title">
+                    Please provide some information about you
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-10 input_form">
+                       <form>
+                           <div class="form-group">
+                                <label for="name">Name (Required)</label>
+                                <input type="text" class="form-control" id = "name" placeholder="Enter name">
+                           </div>
+                           <div class="form-group">
+                                <label for="photo_url">Link to photo (Required)</label>
+                                <input type="text" class="form-control" id = "photo_url" placeholder="Enter photo url">
+                           </div>
+                       </form>
+                       <form name="questions">
+                            <div class="input-group mb-3">
+                                Question 1
+                                <p>You love the outdoors</p>
+                                <select class="custom-select" id="q1">
+                                    <option selected>Select an Option</option>
+                                    <option value ="1">1 (Strongly disagree)</option>
+                                    <option value ="2">2 </option>
+                                    <option value ="3">3 </option>
+                                    <option value ="4">4 </option>
+                                    <option value ="5">5 (Strongly agree)</option>
+                                </select>
+                                <p><br /></p>
+                            </div>
+                            <div class="input-group mb-3">
+                                    <p>Question 2</p>
+                                    <p>You dislike super-hero movies</p>
+                                    <select class="custom-select" id="q2">
+                                        <option selected>Select an Option</option>
+                                        <option value ="1">1 (Strongly disagree)</option>
+                                        <option value ="2">2 </option>
+                                        <option value ="3">3 </option>
+                                        <option value ="4">4 </option>
+                                        <option value ="5">5 (Strongly agree)</option>
+                                    </select>
+                                    <p><br /></p>
+                            </div>
+                            <div class="input-group mb-3">
+                                    <p>Question 3</p>
+                                    <p>You love to read</p>
+                                    <select class="custom-select" id="q3">
+                                        <option selected>Select an Option</option>
+                                        <option value ="1">1 (Strongly disagree)</option>
+                                        <option value ="2">2 </option>
+                                        <option value ="3">3 </option>
+                                        <option value ="4">4 </option>
+                                        <option value ="5">5 (Strongly agree)</option>
+                                    </select>
+                                    <p><br /></p>
+                            </div>
+                            <div class="input-group mb-3">
+                                    <p>Question 4</p>
+                                    <p>You like trying new things</p>
+                                    <select class="custom-select" id="q4">
+                                        <option selected>Select an Option</option>
+                                        <option value ="1">1 (Strongly disagree)</option>
+                                        <option value ="2">2 </option>
+                                        <option value ="3">3 </option>
+                                        <option value ="4">4 </option>
+                                        <option value ="5">5 (Strongly agree)</option>
+                                    </select>
+                                    <p><br /></p>
+                            </div>
+                            <div class="input-group mb-3">
+                                    <p>Question 5</p>
+                                    <p>Exercising regularly is important to you</p>
+                                    <select class="custom-select" id="q5">
+                                        <option selected>Select an Option</option>
+                                        <option value ="1">1 (Strongly disagree)</option>
+                                        <option value ="2">2 </option>
+                                        <option value ="3">3 </option>
+                                        <option value ="4">4 </option>
+                                        <option value ="5">5 (Strongly agree)</option>
+                                    </select>
+                                    <p><br /></p>
+                            </div>
+                            <div class="input-group mb-3">
+                                    <p>Question 6</p>
+                                    <p>You love talking and interacting with other people</p>
+                                    <select class="custom-select" id="q6">
+                                        <option selected>Select an Option</option>
+                                        <option value ="1">1 (Strongly disagree)</option>
+                                        <option value ="2">2 </option>
+                                        <option value ="3">3 </option>
+                                        <option value ="4">4 </option>
+                                        <option value ="5">5 (Strongly agree)</option>
+                                    </select>
+                                    <p><br /></p>
+                            </div>
+                            <div class="input-group mb-3">
+                                    <p>Question 7</p>
+                                    <p>You have and follow a budget</p>
+                                    <select class="custom-select" id="q7">
+                                        <option selected>Select an Option</option>
+                                        <option value ="1">1 (Strongly disagree)</option>
+                                        <option value ="2">2 </option>
+                                        <option value ="3">3 </option>
+                                        <option value ="4">4 </option>
+                                        <option value ="5">5 (Strongly agree)</option>
+                                    </select>
+                                    <p><br /></p>
+                            </div>
+                            <div class="input-group mb-3">
+                                    <p>Question 8</p>
+                                    <p>You love kids</p>
+                                    <select class="custom-select" id="q8">
+                                        <option selected>Select an Option</option>
+                                        <option value ="1">1 (Strongly disagree)</option>
+                                        <option value ="2">2 </option>
+                                        <option value ="3">3 </option>
+                                        <option value ="4">4 </option>
+                                        <option value ="5">5 (Strongly agree)</option>
+                                    </select>
+                                    <p><br /></p>
+                            </div>
+                            <div class="input-group mb-3">
+                                    <p>Question 9</p>
+                                    <p>You love to party on the weekends</p>
+                                    <select class="custom-select" id="q9">
+                                        <option selected>Select an Option</option>
+                                        <option value ="1">1 (Strongly disagree)</option>
+                                        <option value ="2">2 </option>
+                                        <option value ="3">3 </option>
+                                        <option value ="4">4 </option>
+                                        <option value ="5">5 (Strongly agree)</option>
+                                    </select>
+                                    <p><br /></p>
+                            </div>
+                            <div class="input-group mb-3">
+                                    <p>Question 10</p>
+                                    <p>You love dancing</p>
+                                    <select class="custom-select" id="q10">
+                                        <option selected>Select an Option</option>
+                                        <option value ="1">1 (Strongly disagree)</option>
+                                        <option value ="2">2 </option>
+                                        <option value ="3">3 </option>
+                                        <option value ="4">4 </option>
+                                        <option value ="5">5 (Strongly agree)</option>
+                                    </select>
+                                    <p><br /></p>
+                            </div>
+                       </form>
+                       <button type="submit" class="btn btn-primary submit">Submit</button>
+                </div>
+            </div>
+    </div>
+
+    <div>
+        <!-- <a href = "/api/friends">API Friends List</a> -->
+    </div>
+
+    <!-- <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>You have a match! It is: <span id="matchName"></span></p>
+            <p>Here is their picture: <img src = ></p>
+        </div>
+    </div> -->
+
+</body>
+</html>
+
+<script type = "text/javascript">
+
+   
+
+
+    
+
+    $(".submit").on("click", function(event){
+        event.preventDefault();
+
+        var scores = [];
+
+        var numQuestions = 10;
+
+        for (var i = 0; i < numQuestions; i++){
+            scores[i] = parseInt(document.questions[i].value);
+        }
+        
+        console.log(scores);
+        var sum = 0;
+        for (var i in scores){
+            sum += scores[i];
+        }
+        
+        console.log(sum)
+        console.log(typeof(sum));
+        console.log($("#name").val())
+
+        if(isNaN(sum) || $("#name").val() == "" || $("#photo_url").val() == ""){
+            alert("Please answer all the questions!");
+        }
+
+        else {
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo_url: $("#photo_url").val().trim(),
+                scores: scores
+            }
+            
+            $.post("/api/friends", newFriend, function(data){
+                $("#name").val("")
+                $("#photo_url").val("")
+                for (var i = 0; i < numQuestions; i++){
+                    document.questions[i].value = "Select an Option";
+                }
+            })
+
+        }
+
+        
+        
+        console.log(newFriend);
+        console.log(newFriend.name);
+    })
+
+
+
+
+
+</script>
